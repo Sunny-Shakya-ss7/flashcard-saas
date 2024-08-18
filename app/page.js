@@ -8,24 +8,22 @@ import {
   Toolbar,
   Typography,
 } from "@mui/material";
-import Head from "next/head";
 
 export default function Home() {
   return (
     <Container maxWidth="100vw">
-      <Head>
-        <title>Flashcard SaaS</title>
-        <meta name="description" content="Create flashcard from your text" />
-      </Head>
-
       <AppBar position="static">
         <Toolbar>
           <Typography variant="h6" style={{ flexGrow: 1 }}>
             Flashcard SaaS
           </Typography>
           <SignedOut>
-            <Button color="inherit">Login</Button>
-            <Button color="inherit">SignUp</Button>
+            <Button color="inherit" href="/sign-in">
+              Login
+            </Button>
+            <Button color="inherit" href="/sign-up">
+              SignUp
+            </Button>
           </SignedOut>
           <SignedIn>
             <UserButton />

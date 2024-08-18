@@ -10,7 +10,7 @@ import {
 import { SignIn } from "@clerk/nextjs";
 import Link from "next/link";
 
-export default function SignUpPage() {
+export default function SignInPage() {
   <Container maxWidth="sm">
     <AppBar position="static" sx={{ backgroundColor: "#3f51b5" }}>
       <Toolbar>
@@ -35,7 +35,7 @@ export default function SignUpPage() {
       <Typography variant="h4" component="h1" gutterBottom>
         Sign In
       </Typography>
-      <SignIn />
+      <SignIn path="/" routing="path" />
     </Box>
   </Container>;
 }
