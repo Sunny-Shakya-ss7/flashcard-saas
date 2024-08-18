@@ -163,7 +163,7 @@ export default function Generate() {
                             position: "absolute",
                             width: "100%",
                             height: "100%",
-                            backfaceVisibility: "hidden", // Ensure the back face is hidden
+                            backfaceVisibility: "hidden",
                             display: "flex",
                             justifyContent: "center",
                             alignItems: "center",
@@ -171,7 +171,7 @@ export default function Generate() {
                             boxSizing: "border-box",
                           },
                           "& > div > div:nth-of-type(2)": {
-                            transform: "rotateY(180deg)", // Rotate the back face by 180deg
+                            transform: "rotateY(180deg)",
                           },
                         }}
                       >
