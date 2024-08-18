@@ -66,7 +66,12 @@ export default function Flashcard() {
   };
 
   return (
-    <Container maxWidth="md">
+    <Container maxWidth>
+      <Box sx={{ my: 3 }}>
+        <Typography variant="h2" textAlign="center">
+          {search}
+        </Typography>
+      </Box>
       {loading ? (
         <Box
           sx={{
@@ -87,7 +92,7 @@ export default function Flashcard() {
       ) : (
         flashcards.length > 0 && (
           <Box sx={{ mt: 4 }}>
-            <Grid container spacing={3}>
+            <Grid container spacing={4}>
               {flashcards.map((flashcard, index) => {
                 const randomColor = cardColors[index];
 

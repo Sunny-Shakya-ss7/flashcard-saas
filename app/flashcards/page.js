@@ -51,7 +51,7 @@ export default function Flashcards() {
   };
 
   return (
-    <Container maxWidth="md">
+    <Container maxWidth>
       <Box sx={{ my: 3 }}>
         <Typography variant="h2" textAlign="center">
           Flashcards
