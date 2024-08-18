@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+
 import {
   Container,
   Box,
@@ -7,10 +8,21 @@ import {
   Toolbar,
   Button,
 } from "@mui/material";
-import { SignIn } from "@clerk/nextjs";
+import { SignIn, useUser } from "@clerk/nextjs";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { useEffect } from "react";
 
 export default function SignInPage() {
+  const { isSignedIn } = useUser();
+  const router = useRouter();
+
+  useEffect(() => {
+    if (isSignedIn) {
+      router.push("/");
+    }
+  }, [isSignedIn, router]);
+
   <Container maxWidth="sm">
     <AppBar position="static" sx={{ backgroundColor: "#3f51b5" }}>
       <Toolbar>

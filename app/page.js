@@ -41,9 +41,6 @@ export default function Home() {
             <Button color="inherit" href="/sign-in">
               Login
             </Button>
-            <Button color="inherit" href="/sign-up">
-              SignUp
-            </Button>
           </SignedOut>
           <SignedIn>
             <UserButton />
@@ -56,7 +53,12 @@ export default function Home() {
         <Typography variant="h5">
           The easiet way to make flashcard from your text.
         </Typography>
-        <Button variant="contained" color="primary" sx={{ mt: 2 }}>
+        <Button
+          variant="contained"
+          color="primary"
+          sx={{ mt: 2 }}
+          href="/generate"
+        >
           Get Started
         </Button>
       </Box>
