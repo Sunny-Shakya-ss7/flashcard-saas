@@ -1,3 +1,16 @@
+# Introduction
+
+Flashcard AI SaaS is a web application designed to help users create, manage, and review flashcards using advanced AI features. The application leverages AI to generate, customize, and analyze flashcards, making studying more efficient and effective.
+
+# Technologies
+
+- Stack: React, Next.js
+- AI Integration: meta-llama/llama-3.1 API
+- Database: Firebase Datastore
+- Deployment: Vercel
+- Authentication: Clerk
+- Payment: Stripe
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
