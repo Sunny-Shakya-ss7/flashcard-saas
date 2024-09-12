@@ -2,6 +2,8 @@
 
 Flashcard AI SaaS is a web application designed to help users create, manage, and review flashcards using advanced AI features. The application leverages AI to generate, customize, and analyze flashcards, making studying more efficient and effective.
 
+## Demo: https://youtu.be/gqdy1UsVzNQ
+
 # Technologies
 
 - Stack: React, Next.js
